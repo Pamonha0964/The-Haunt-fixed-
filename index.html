@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Haunt</title>
+  <link rel="stylesheet" href="reset.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/x-icon" href="img/pump.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header class="cabeçalho">
+    <div class="container">
+      <input type="checkbox" id="menu" class="container__botao">
+      <label for="menu">
+        <span class="cabeçalho__menu-hamburguer container__imagem"></span>
+      </label>
+      <ul class="lista-menu">
+        <li class="lista-menu__titulo">Categorias</li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Evento</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Decorações</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">História</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Doces ou Travessuras</a>
+        </li>
+        <li class="lista-menu__item">
+          <a href="#" class="lista-menu__link">Fantasias</a>
+        </li>
+      </ul>
+      <img src="img/Logo.svg" alt="Logo da Alurabooks" class="container__imagem">
+    </div>
+    <div class="container">
+      <a href="#"><img src="img/Favoritos.svg" alt="Meus favoritos" class="container__imagem"></a>
+      <a href="#"><img src="img/star.png" alt="Carrinhos de compras" class="star"></a>
+      <a href="#"><img src="img/Usuario.svg" alt="Meu perfil" class="container__imagem"></a>
+    </div>
+  </header>
+
+  <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para achar seu personagem de Halloween!</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua pesquisa assustadora?">
+  </section>
+
+  <section class="carrossel">
+    <h2 class="carrossel__titulo">Personagens Famosos</h2>
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img class="imagem_daora" src="img/freddi.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/jasu.png"
+            alt="Livro sobre liderança em design design da alura books"></div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/jankler.png" alt="Livro sobre javascript assertivo da alura books">
+        </div>
+        <div class="swiper-slide">
+          <img class="imagem_daora" src="img/Pennywise.png" alt="Livro Guia front end" />
+        </div>
+        <div class="swiper-slide">
+          <img class="imagem_daora" src="img/drack.png" alt="Livro sobre portugol" />
+        </div>
+        <div class="swiper-slide">
+          <img class="imagem_daora" src="img/frank.png" alt="Livro sobre acessibilidade" />
+        </div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+
+    <div class="card">
+      <div class="card__descrição">
+        <div class="descrição">
+          <h3 class="descrição__titulo">Talvez você também se interesse por...</h3>
+          <h2 class="descrição__titulo-livro">Jack Skellington</h2>
+          <p class="descrição__texto">
+            Protagonista no filme da Disney de 1993, O Estranho Mundo de Jack de Tim Burton.
+          </p>
+        </div>
+        <img src="img/jack.png" class="descrição__imagem" />
+      </div>
+      <div class="card__botões">
+        <ul class="botões">
+          <li class="botões__item">
+            <img src="img/Favoritos.svg" alt="Favoritar livro" />
+          </li>
+          <li class="botões__item" >
+            <img class="star" src="img/star.png" alt="Adicionar no carrinho de compras" />
+          </li>
+        </ul>
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+  </section>
+
+  <section class=”carrossel”>
+    <h2 class="carrossel__titulo">Mais vistos</h2>
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide"><img class="imagem_daora" src="img/freddi.png"
+            alt="Livro sobre apache kafka e spring boot da alura books"></div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/jasu.png" alt="Livro sobre liderança em design da alura books">
+        </div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/jankler.png" alt="Livro sobre javascript assertivo da alurabooks">
+        </div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/Pennywise.png" alt="Livro Guia front end"></div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/drack.png" alt="Livro sobre portugol"></div>
+        <div class="swiper-slide"><img class="imagem_daora" src="img/frank.png" alt="livro sobre acessibilidade"></div>
+      </div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+
+    <div class="card">
+      <!-- 1º linha -->
+      <div class="card__descrição">
+        <!-- 1º coluna -->
+        <div class="descrição">
+          <img src="img/Estrelinhas.svg" alt="Avaliação 5 estrelas">
+          <h3 class="descrição__titulo">Personagem do Mês</h3>
+          <h2 class="descrição__titulo-livro">Skid and Pump</h2>
+          <p class="descrição__texto">Uma dupla de crianças com fantasias de Halloween.
+          </p>
+        </div>
+        <!-- 2º coluna -->
+        <img src="img/skidppump.png" class="descrição__imagem">
+      </div>
+
+      <!-- 2º linha -->
+      <div class="card__botões">
+        <!-- 1º coluna -->
+        <ul class="botões">
+          <li class="botões__item"><img src="img/Favoritos.svg" alt="Favoritar personagem"></li>
+          <li class="botões__item"><img class="star" src="img/star.png" alt="Adicionar no carrinho de compras"></li>
+        </ul>
+        <!-- 2º coluna -->
+        <a href="#" class="botões__ancora">Saiba mais</a>
+      </div>
+    </div>
+
+
+
+  </section>
+
+  <section class="tópicos">
+    <h2 class="tópicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+    <ul class="tópicos__lista">
+      <li class="tópicos__item"><a href="#" class="tópicos__link">A Primeira Profecia</a></li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">O Exorcista</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Hereditário</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Invocação do Mal</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">O Iluminado</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">O Massacre da Serra Elétrica</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">O Chamado</a>
+      </li>
+      <li class="tópicos__item">
+        <a href="#" class="tópicos__link">Halloween</a>
+      </li>
+    </ul>
+  </section>
+
+  <section class="contato">
+    <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+    <p class="contato__texto">
+      Atualizações de Personagens, Filmes e outros.
+    </p>
+    <input type="email" placeholder="Cadastre seu e-mail" class="contato__email" />
+  </section>
+
+  <hr />
+
+  <footer class="rodapé">
+    <h2 class="rodapé__titulo">The Haunt</h2>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper(".swiper", {
+      spaceBetween: 10,
+      slidesPerView: 3,
+      pagination: {
+        el: ".swiper-pagination",
+        type: "bullets",
+      },
+    });
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+@import url("styles/header.css");
+@import url("styles/banner.css");
+@import url("styles/carrossel.css");
+@import url("styles/topicos.css");
+@import url("styles/contato.css");
+@import url("styles/rodapé.css");
+
+:root {
+    --cor-de-fundo: #464646;
+    --branco: #000000;
+    --laranja: #ffffff;
+    --azul-degrade: linear-gradient(30deg, #944300 35.49%, #ff7300 165.37%);
+    --fonte-principal: "Poppins";
+    --azul: #ff4800;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.descrição__imagem {
+    height: 175px;
+    width: 175px;
+}
+
+.imagem_daora {
+    height: 525px;
+    width: 175px;
+}
+
+.star {
+    height: 50px;
+    width: 50px;
+    margin-top: -5px;
+}
